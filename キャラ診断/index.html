@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>第10回 jQuery</title>
-    <!-- css reset -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/sweetalert.css">
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <div class="loader">
-      <div class="loading" id="loading">
-        <img src="./img/loading.gif" alt="ローディング画像">
-      </div>
-    </div>
 
-    <div class="wrapper" id="wrapper">
-      <section class="section">
-        <h1 class="section-title">キャラ診断</h1>
-        <p class="message">あなたの名前を入力してね！</p>
-        <input type="text" name="name" id="name" class="name-input">
-        <button class="btn" id="btn">診断する</button>
-        <p class="result" id="result">ここに結果が表示されます。</p>
-      </section>
-      <!-- <header class="header" id="header"></header> -->
-    </div>
+<head>
+  <meta charset="utf-8">
+  <title>キャラクター診断</title>
+  <!-- css reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/sweetalert.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 
-    <!-- jQuery Library plugin -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- easing plugin -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
-    <script src="./js/sweetalert.min.js"></script>
-    <script src="./js/myscripts.js"></script>
-  </body>
+<body>
+  <div class="loader">
+    <div class="loading" id="loading">
+      <img src="./img/loading.gif" alt="ローディング画像">
+    </div>
+  </div>
+
+  <div class="wrapper" id="wrapper">
+    <div>
+      <h1 class="items">適職診断</h1>
+      <p class="items">あなたの名前を入力してください。</p>
+      <input type="text" name="name" id="name" class="name-items">
+      <button class="btn" id="btn">診断</button>
+      <p id="result">ここに結果が表示されます。</p>
+    </div>
+    <!-- <header class="header" id="header"></header> -->
+  </div>
+
+  <!-- jQuery Library plugin -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- easing plugin -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+  <script src="./js/sweetalert.min.js"></script>
+  <script src="./js/myscripts.js"></script>
+</body>
+
 </html>

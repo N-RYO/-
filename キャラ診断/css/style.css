@@ -1,22 +1,5 @@
 @charset "UTF-8";
 
-a {
-  text-decoration: none;
-}
-
-img {
-  vertical-align: bottom;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
 .cf::after {
   content: '';
   display: block;
@@ -24,7 +7,8 @@ img {
 }
 
 body {
-  font: 14px 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font: 24px 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  background-color: dimgrey;
 }
 
 .loading {
@@ -35,7 +19,11 @@ body {
 }
 
 .wrapper {
-  display: none;
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin: 100px;
+  text-align: center;
 }
 
 .header {
@@ -44,37 +32,28 @@ body {
   height: 600px;
 }
 
-.section {
-  padding: 60px;
+.items {
+  margin: 50px;
 }
 
-.section-title {
-  font-size: 24px;
-  color: #333;
-  margin: 20px 0;
-}
-
-.message {
-  margin-bottom: 30px;
-}
-
-.name-input {
-  padding: 5px 10px;
-  width: 300px;
-}
-
-.name-input:focus {
-  border: 3px solid #1da1f2;
+.name-items {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 0 auto;
+  background-color: seashell;
 }
 
 .btn {
-  display: block;
-  margin: 30px 0;
-  width: 150px;
-  text-align: center;
-  background: #1da1f2;
-  border: none;
-  color: #fff;
-  font-size: 18px;
+  width: 250px;
+  height: 50px;
+  margin: 50px;
+  background-color: seashell;
+  color: black;
+  border-radius: 10px;
+  font-size: 20px;
   cursor: pointer;
 }

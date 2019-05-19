@@ -11,7 +11,7 @@ $(function () {
   // フルスクリーン表示
   // resize イベント
   $(window).on('load resize', function () {
-    var wH = $(window).height();
+    let wH = $(window).height();
     // console.log(wH);
     // css メソッド
     $('#header').css('height', wH);
@@ -20,7 +20,7 @@ $(function () {
   // キャラ診断
   $('#btn').on('click', function () {
     // フォーム部品の取得 val(); valueの略
-    var name = $('#name').val();
+    let name = $('#name').val();
     // console.log(name);
     if (name === '') {
       // alert('名前を入力してください！');
@@ -34,9 +34,9 @@ $(function () {
 
     // 配列を用意する
     // 職業をまとめた配列
-    var jobs = ['戦士', '騎士', '魔法使い', '盗賊', '冒険家'];
+    let jobs = ['フロントエンドエンジニア', '医者', '事務', '経理', 'パイロット', '警察官', 'バックエンドエンジニア', 'パティシエ', '看護士'];
     // 形容詞をまとめた配列
-    var charas = [];
+    let charas = [];
 
     // console.log(jobs[]); 0 ~ 4
     // 配列から値をランダムに取ってくる
@@ -46,12 +46,12 @@ $(function () {
     // Math.floor() 小数点切り捨て
     // console.log(Math.floor(Math.random() * jobs.length));
     // 職業の配列からランダムに取ってきて、yourJobにセット
-    var num = Math.floor(Math.random() * jobs.length);
-    var yourJob = jobs[num];
+    let num = Math.floor(Math.random() * jobs.length);
+    let yourJob = jobs[num];
     // 形容詞の配列からランダムに取ってきて、yourCharaにセット
 
 
-    var result = name + 'さんは「' + yourJob + '」です。';
+    let result = name + 'さんの適職は「' + yourJob + '」です。';
     $('#result').text(result);
   });
 });
